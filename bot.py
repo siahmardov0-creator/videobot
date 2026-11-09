@@ -4,7 +4,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, MessageEntity, 
 from telegram.ext import (Application, CallbackQueryHandler, CommandHandler,
                           ContextTypes, MessageHandler, filters)
 
-TOKEN = os.environ["BOT_TOKEN"]
+TOKEN = os.environ.get("BOT_TOKEN") or "9190562674:AAEImxs-JOg8jU9yKWHFxrMXb0mb6qIcQeE"
 HERE = os.path.dirname(os.path.abspath(__file__))
 COOKIES = os.path.join(HERE, "cookies.txt")
 DATA = os.environ.get("DATA_PATH", os.path.join(HERE, "data.json"))
